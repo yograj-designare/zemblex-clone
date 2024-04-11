@@ -3,7 +3,7 @@ import { FC } from "react";
 export const ContactUs: FC = () => (
   <div className="px-4 flex flex-col gap-[10px]">
     <div className="">
-      <h2 className="text-[32px] leading-[1.2em]">Let's Connect</h2>
+      <h2 className="text-[32px] leading-[1.2em]">Let&apos;s Connect</h2>
     </div>
     <div className="w-full h-auto flex flex-col gap-2">
       <a

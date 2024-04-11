@@ -36,12 +36,12 @@ export const OurServices: FC = () => (
       <p className="sub-heading">
         Step into a world of cutting-edge design and limitless possibilities.
         Elevate your experience with our futuristic templates, crafting a
-        tomorrow that starts now."
+        tomorrow that starts now.
       </p>
     </div>
     <div className="py-5 flex gap-6 items-center justify-center w-full">
       {SERVICES_DATA.map((each: any) => (
-        <ServiceCard title={each.title} icon={each.icon} />
+        <ServiceCard key={each.id} title={each.title} icon={each.icon} />
       ))}
     </div>
     <div className="w-full px-1">

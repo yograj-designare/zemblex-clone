@@ -78,7 +78,7 @@ export const Sidebar: FC = () => {
           <div className=" flex flex-col gap-1">
             <p className="text-xs">Menu</p>
             {sidebarItems.map((items: any) => (
-              <Link href={items.link}>
+              <Link href={items.link} key={items.id}>
                 <div
                   className={cn(
                     "flex items-center gap-[10px] cursor-pointer py-[5px] px-1 rounded-[10px] opacity-80 border border-transparent",

@@ -23,7 +23,7 @@ export const NewsLetter: FC = () => (
         </div>
         <div>
           <p className="nunito-sans text-lg leading-[1.4em] opacity-60">
-            Don't miss out on anything Subscribe to our newsletter to stay
+            Don(&apos;)t miss out on anything Subscribe to our newsletter to stay
             informed about our latest projects, collaborations, and helpful
             resources. join over 100.000+ Readers Worldwide…
           </p>

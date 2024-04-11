@@ -44,7 +44,7 @@ export const Navbar: FC = () => {
         </div>
         <div className="flex items-center gap-[16px]">
           {links.map((each: any) => (
-            <NavbarLinks icon={each.icon} displayName={each.displayName} />
+            <NavbarLinks icon={each.icon} displayName={each.displayName} key={each.id}/>
           ))}
         </div>
       </div>
