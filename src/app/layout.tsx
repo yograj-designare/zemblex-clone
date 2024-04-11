@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Providers } from "@/components/Providers";
+import { Sidebar } from "@/components/Sidebar/Sidebar";
+import { Navbar } from "@/components/Navbar/Navbar";
+import { Footer } from "@/components/Footer/Footer";
+import { Button } from "@/components/Button/Button";
+
 import "./globals.css";
+import { Icons } from "@/components/Icons/Icons";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +24,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={` dark text-foreground bg-background`}>
+        <Providers>
+          <div className="flex justify-start w-auto flex-nowrap min-h-screen relative">
+            <Sidebar />
+            <div className="flex-1 flex justify-center lg:px-2 xl:px-5">
+              <div className="max-w-[1080px] flex-1 flex flex-col gap-1">
+                <Navbar />
+                {children}
+                <Footer />
+              </div>
+            </div>
+          </div>
+          <div className="fixed bottom-5 right-5">
+            <Button prefixIcon={<Icons.Framer className="pr-1" fill="black" size={20}/>} className="!h-[36px] !py-3 !px-0 w-[143px] !bg-white text-xs" variant={'filled'}>Made in Framer</Button>
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }
