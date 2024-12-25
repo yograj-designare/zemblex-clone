@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 export const BlogCard:FC = () => (
-    <a href="/" className="group">
+    <a href="/#" className="group">
     <div className="w-full h-[300px] relative">
       <div className="border border-[#ffffff1a] rounded-[20px] bg-[#ffffff08] flex gap-0 flex-nowrap overflow-hidden relative cursor-pointer h-full">
         <div className="rounded-[20px] flex-1 overflow-hidden relative">
