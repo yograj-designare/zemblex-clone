@@ -40,7 +40,7 @@ export const BlogCard:FC = () => (
                 <div>
                   <p className="nunito-sans text-lg opacity-60 leading-[1.4rem] ">
                     Craft a compelling personal brand to attract
-                    freelance clients
+                    freelance clients.
                   </p>
                 </div>
               </div>
